@@ -16,17 +16,6 @@ blue.addEventListener('click', addSelected);
 green.addEventListener('click', addSelected);
 yellow.addEventListener('click', addSelected);
 
-/* let pixelBoard = document.getElementById('pixel-board');
-
-pixelBoard.addEventListener('click', function paintItem (event) {
-  let selectedItemColor = document.querySelector(".selected");
-  console.log(selectedItemColor);
-  event.target.style.backgroundColor = selectedItemColor.style.backgroundColor;
-  console.log(selectedItemColor.style.backgroundColor);
-  console.log(event.target);
-
-}); */
-
 const pixelBoard = document.querySelector('#pixel-board');
 function paintItem(event) {
   const selectedItemColor = document.querySelector('.selected');

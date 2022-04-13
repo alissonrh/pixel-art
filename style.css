@@ -1,9 +1,24 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
+html, body {
+  height: 100%;
+  display: grid;
+  place-items: center
+}
 
+body {
+  background: url(fundo.png);
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 50px;
+}
 
 .pixel {
 border: 1px solid black;
@@ -13,27 +28,18 @@ display: inline-block;
 background-color: white; 
 }
 
-/* .pixel-line {
-display: inline-block; 
-}
-*/
-main {
+main, header h1, footer {
 display: flex;
-justify-content: center;  
-align-content: center;
 text-align: center;
 border: 1px solid black;
-
-
+padding: 20px;
+border-radius: 10px;
+background-color: rgb(233, 232, 232);
 }
-
 
 #pixel-board {
-height: 890px;
+height: 100%;
 }
-
-
-
 
 .black {
 background-color: black;
@@ -69,6 +75,6 @@ line-height: 0;
 
 header, footer {
 text-align: center;
-padding: 20px 0;
+margin: 20px
 }
 
